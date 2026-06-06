@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Manosphere and Incel Culture | The Lotus Assembly</title>
+<meta name="description" content="Violent incels have murdered at least 47 people in North America. 73% of boys aged 11-17 regularly encounter manosphere content. This is not a niche issue. It is a women's safety crisis." />
+<meta property="og:title" content="The Manosphere Is a Women's Safety Crisis | The Lotus Assembly" />
+<meta property="og:description" content="Learn what the manosphere and incel culture are, how they directly threaten women, and what we can do together to fight back." />
+<meta property="og:type" content="website" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #FDF8F8;
+  color: #2A1010;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2E1515 0%, #8B3030 55%, #B04040 100%);
+  color: white;
+  padding: 44px 28px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; left: -40px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+
+.hero-ribbon {
+  display: inline-block;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 100px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 5px 18px; margin-bottom: 18px;
+  color: #FFCECE;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px; font-weight: 900;
+  line-height: 1.1; margin-bottom: 14px;
+  color: #fff; position: relative;
+}
+
+.hero h1 span { color: #FFCECE; }
+
+.hero p {
+  font-size: 15px; line-height: 1.7;
+  max-width: 520px; margin: 0 auto;
+  color: rgba(255,255,255,0.83); position: relative;
+}
+
+.stat-bar { background: #2E1515; display: flex; }
+
+.stat-item {
+  flex: 1; text-align: center;
+  padding: 16px 8px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700;
+  color: #FFCECE; display: block; margin-bottom: 3px;
+}
+
+.stat-label {
+  font-size: 10px; color: rgba(255,255,255,0.58);
+  line-height: 1.35; display: block;
+}
+
+.section { padding: 30px 24px 0; }
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700;
+  color: #8B3030; margin-bottom: 4px;
+}
+
+.section-sub {
+  font-size: 13px; color: #9A6060;
+  margin-bottom: 18px; font-style: italic;
+}
+
+.what-box {
+  background: white; border-radius: 16px; padding: 22px;
+  border-left: 5px solid #B04040;
+  box-shadow: 0 2px 14px rgba(74,16,16,0.09);
+}
+
+.what-box p { font-size: 15px; line-height: 1.8; color: #2A1010; }
+.what-box strong { color: #8B3030; }
+
+.divider {
+  height: 2px;
+  background: linear-gradient(90deg, #B04040, #FFCECE, transparent);
+  margin: 28px 24px 0; border-radius: 2px;
+}
+
+.tier-cards { display: flex; flex-direction: column; gap: 10px; }
+
+.tier-card {
+  background: white; border-radius: 14px; padding: 16px 18px;
+  box-shadow: 0 2px 10px rgba(74,16,16,0.07);
+  border-left: 4px solid #B04040;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+
+.tier-icon { font-size: 22px; flex-shrink: 0; }
+.tier-card h3 { font-size: 14px; font-weight: 600; color: #8B3030; margin-bottom: 4px; }
+.tier-card p  { font-size: 13px; color: #7A4040; line-height: 1.6; }
+
+.danger-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.danger-card {
+  background: white; border-radius: 14px; padding: 18px 16px;
+  box-shadow: 0 2px 10px rgba(74,16,16,0.08);
+  border-top: 3px solid #B04040;
+}
+
+.danger-icon { font-size: 24px; margin-bottom: 10px; display: block; }
+.danger-card h3 { font-size: 14px; font-weight: 600; color: #8B3030; margin-bottom: 6px; line-height: 1.3; }
+.danger-card p  { font-size: 13px; color: #7A4040; line-height: 1.6; }
+
+.stat-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+
+.stat-card {
+  background: white; border-radius: 14px; padding: 16px 12px;
+  text-align: center; box-shadow: 0 2px 8px rgba(74,16,16,0.08);
+}
+
+.big-stat {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 700; color: #B04040;
+  display: block; margin-bottom: 4px;
+}
+
+.stat-card p { font-size: 11px; color: #7A4040; line-height: 1.5; }
+
+.action-cards { display: flex; flex-direction: column; gap: 12px; }
+
+.action-card {
+  background: white; border-radius: 14px; padding: 18px;
+  display: flex; gap: 16px; align-items: flex-start;
+  box-shadow: 0 2px 10px rgba(74,16,16,0.07);
+}
+
+.action-num {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: #8B3030; color: white;
+  font-weight: 700; font-size: 15px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-family: 'Playfair Display', serif;
+}
+
+.action-card h3 { font-size: 15px; font-weight: 600; color: #8B3030; margin-bottom: 5px; }
+.action-card p  { font-size: 13px; color: #7A4040; line-height: 1.65; }
+
+.band-card {
+  background: white; border-radius: 16px; padding: 22px;
+  box-shadow: 0 2px 14px rgba(74,16,16,0.09);
+  border-bottom: 4px solid #B04040;
+}
+
+.band-card h3 { font-family: 'Playfair Display', serif; font-size: 18px; color: #8B3030; margin-bottom: 14px; }
+
+.band-idea {
+  display: flex; gap: 12px; align-items: flex-start;
+  margin-bottom: 14px; padding-bottom: 14px;
+  border-bottom: 1px solid #F5E5E5;
+}
+
+.band-idea:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.band-emoji { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.band-idea h4 { font-size: 14px; font-weight: 600; color: #3A1A1A; margin-bottom: 3px; }
+.band-idea p  { font-size: 13px; color: #7A4040; line-height: 1.6; }
+
+.source-note { font-size: 11px; color: #9A6060; margin-top: 8px; line-height: 1.6; font-style: italic; }
+
+.cta-section {
+  background: linear-gradient(135deg, #2E1515, #8B3030);
+  margin: 28px 24px 0; border-radius: 20px;
+  padding: 32px 26px; color: white; text-align: center;
+}
+
+.cta-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 700;
+  color: #fff; margin-bottom: 10px; line-height: 1.2;
+}
+
+.cta-section > p {
+  font-size: 14px; color: rgba(255,255,255,0.82);
+  line-height: 1.7; margin-bottom: 24px;
+}
+
+.form-input {
+  display: block; width: 100%;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: 12px; padding: 13px 16px;
+  color: white; font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  outline: none; margin-bottom: 10px;
+}
+
+.form-input::placeholder { color: rgba(255,255,255,0.48); }
+.form-input:focus { border-color: rgba(255,255,255,0.65); background: rgba(255,255,255,0.2); }
+
+.role-label { font-size: 13px; color: rgba(255,255,255,0.75); text-align: left; margin-bottom: 10px; }
+.role-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 18px; }
+
+.role-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1.5px solid rgba(255,255,255,0.26);
+  border-radius: 10px; padding: 11px 8px;
+  color: rgba(255,255,255,0.8); font-size: 12px;
+  cursor: pointer; text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s; line-height: 1.4;
+}
+
+.role-btn:hover { background: rgba(255,255,255,0.2); color: white; }
+.role-btn.selected { background: white; color: #8B3030; border-color: white; font-weight: 600; }
+
+.submit-btn {
+  width: 100%; background: white; color: #8B3030;
+  border: none; border-radius: 12px; padding: 15px;
+  font-size: 16px; font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(0,0,0,0.25); }
+.submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+.error-msg {
+  background: rgba(255,80,80,0.18);
+  border: 1px solid rgba(255,150,150,0.35);
+  border-radius: 10px; padding: 10px 14px;
+  font-size: 13px; color: #FFD0D0;
+  margin-bottom: 12px; display: none; text-align: left;
+}
+
+.success-box {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: 14px; padding: 22px; display: none;
+}
+
+.success-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px; color: #FFCECE; margin-bottom: 8px;
+}
+
+.success-box p { font-size: 14px; color: rgba(255,255,255,0.86); line-height: 1.65; }
+
+.tag {
+  display: inline-block; background: #F8EAEA; color: #8B3030;
+  border-radius: 100px; padding: 4px 12px;
+  font-size: 12px; font-weight: 600; margin: 3px 2px;
+}
+
+.lt-footer {
+  margin: 24px 24px 0; background: white;
+  border-radius: 16px; padding: 20px 22px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(74,16,16,0.08);
+  border: 1px solid #F5E5E5;
+}
+
+.lt-footer p { font-size: 13px; color: #7A4040; margin-bottom: 12px; line-height: 1.5; }
+
+.lt-footer-btn {
+  display: inline-block; background: #8B3030; color: white;
+  border-radius: 12px; padding: 12px 28px;
+  font-size: 14px; font-weight: 700;
+  text-decoration: none; font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.15s; margin: 4px;
+}
+
+.lt-footer-btn:hover { opacity: 0.85; }
+.lt-footer-btn.outline { background: #FDF8F8; color: #8B3030; border: 2px solid #8B3030; }
+
+.footer-note {
+  text-align: center; padding: 24px;
+  font-size: 12px; color: #9A6060; line-height: 1.8;
+}
+
+.warning-box {
+  background: rgba(122,26,26,0.06);
+  border: 1px solid rgba(122,26,26,0.18);
+  border-left: 4px solid #B04040;
+  border-radius: 14px; padding: 18px 20px;
+  margin-bottom: 0;
+}
+
+.warning-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; color: #8B3030; margin-bottom: 8px;
+}
+
+.warning-box p { font-size: 13px; color: #7A4040; line-height: 1.75; }
+.warning-box strong { color: #8B3030; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-ribbon">The Lotus Assembly</div>
+  <h1>The Manosphere Is<br>Not a <span>Joke.</span><br>It Is a Safety Crisis.</h1>
+  <p>Online communities built on hatred of women are radicalizing men and boys at an alarming rate. Incels, the Red Pill, Andrew Tate, and their networks are not fringe anymore. They are in your sons' feeds, your daughters' relationships, and your communities. Here is what we are up against and what we can do.</p>
+</div>
+
+<div class="stat-bar">
+  <div class="stat-item">
+    <span class="stat-num">47+</span>
+    <span class="stat-label">people murdered by violent<br>incels in North America</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">73%</span>
+    <span class="stat-label">of boys aged 11 to 17 regularly<br>encounter manosphere content</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">50%</span>
+    <span class="stat-label">increase in misogynistic attitudes<br>after 3 months of TikTok exposure</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">What Is the Manosphere?</div>
+  <div class="section-sub">In plain terms</div>
+  <div class="what-box">
+    <p>The <strong>manosphere</strong> is a network of online communities united by the belief that women have too much power and that men are the real victims of modern society. It ranges from <strong>Men's Rights Activists</strong> who file legal complaints, to <strong>Pick Up Artists</strong> who treat women as objects to be manipulated, to <strong>incels</strong> who openly celebrate and encourage violence against women. <strong>This is not about lonely young men venting online.</strong> It is an organized, algorithmically amplified ideology that has produced mass shooters, domestic abusers, and a generation of boys who are being taught that women's autonomy is an attack on them. It is a women's issue. It is a safety issue. And it requires our attention.</p>
+  </div>
+</div>
+
+<div class="section" style="padding-top:24px;">
+  <div class="section-title">The Tiers of the Manosphere</div>
+  <div class="section-sub">From harmful to deadly — understanding who we are dealing with</div>
+  <div class="tier-cards">
+    <div class="tier-card">
+      <span class="tier-icon">🎙️</span>
+      <div>
+        <h3>Influencers and Content Creators (Andrew Tate, Fresh and Fit, etc.)</h3>
+        <p>The entry point. Fitness, money, and dating advice packaged with increasingly misogynistic messaging. Boys encounter this content without searching for it due to algorithmic recommendations on TikTok and YouTube.</p>
+      </div>
+    </div>
+    <div class="tier-card">
+      <span class="tier-icon">💊</span>
+      <div>
+        <h3>Red Pill and MGTOW (Men Going Their Own Way)</h3>
+        <p>Ideology that frames feminism as a conspiracy against men. Teaches men to view women as manipulative, hypergamous, and unworthy of respect. Often a gateway to more extreme content.</p>
+      </div>
+    </div>
+    <div class="tier-card">
+      <span class="tier-icon">🚫</span>
+      <div>
+        <h3>Incels (Involuntary Celibates)</h3>
+        <p>The most violent element of the manosphere. Incels blame women for their lack of romantic success and openly discuss violence against women as justified revenge. The ADL has documented at least 47 murders connected to incel ideology in North America.</p>
+      </div>
+    </div>
+    <div class="tier-card">
+      <span class="tier-icon">⚖️</span>
+      <div>
+        <h3>Men's Rights Activists (MRAs)</h3>
+        <p>Operate through legal and political channels to roll back women's protections. They target domestic violence laws, rape shield protections, and reproductive rights — framing equality as discrimination against men.</p>
+      </div>
+    </div>
+  </div>
+  <p class="source-note">Sources: ADL Incel Backgrounder 2025 · Center for Countering Digital Hate 2024 · UN Women Explainer 2024</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-title">How This Directly Affects Women</div>
+  <div class="section-sub">This is not theoretical. These are documented harms.</div>
+  <div class="danger-grid">
+    <div class="danger-card">
+      <span class="danger-icon">🔫</span>
+      <h3>Real-world violence</h3>
+      <p>Incel-inspired attacks have killed dozens of people. The 2025 Antioch High School shooting in Nashville was carried out by a registered incel forum user who posted about wanting to harm women.</p>
+    </div>
+    <div class="danger-card">
+      <span class="danger-icon">🏠</span>
+      <h3>Domestic abuse pipeline</h3>
+      <p>Manosphere ideology is increasingly cited in domestic abuse cases. Men who consume this content are more likely to use controlling behavior, emotional abuse, and physical violence against partners.</p>
+    </div>
+    <div class="danger-card">
+      <span class="danger-icon">📱</span>
+      <h3>Online harassment</h3>
+      <p>Women who speak publicly, especially about feminism or gender issues, face coordinated campaigns of harassment, threats, and doxxing organized through manosphere communities.</p>
+    </div>
+    <div class="danger-card">
+      <span class="danger-icon">👦</span>
+      <h3>Boys being radicalized</h3>
+      <p>59% of boys aged 11 to 17 encounter manosphere content without actively searching for it. Algorithms push it to them. Within 23 minutes of signing up, male-identified accounts are fed extremist content.</p>
+    </div>
+  </div>
+  <p class="source-note">Sources: ADL 2025 · Refuge UK 2026 · Dublin City University Study 2024 · UN Women UK 2026</p>
+</div>
+
+<div class="section" style="padding-top:24px;">
+  <div class="section-title">By the Numbers</div>
+  <div class="stat-cards">
+    <div class="stat-card">
+      <span class="big-stat">30%</span>
+      <p>rise in incel-related online threats since 2020 per ADL data</p>
+    </div>
+    <div class="stat-card">
+      <span class="big-stat">23 min</span>
+      <p>is how long before male-identified accounts are fed extremist manosphere content on TikTok and YouTube</p>
+    </div>
+    <div class="stat-card">
+      <span class="big-stat">70%</span>
+      <p>of young men on YouTube encounter manosphere content weekly per 2025 research</p>
+    </div>
+  </div>
+  <p class="source-note">Sources: ADL 2025 · Bonfire Leadership Solutions 2025 · Dublin City University 2024</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-title">What WE Can Do</div>
+  <div class="section-sub">Women are not powerless against this. Here is how we fight back.</div>
+  <div class="action-cards">
+    <div class="action-card">
+      <div class="action-num">1</div>
+      <div>
+        <h3>Talk to the young men and boys in your life</h3>
+        <p>Ask what they are watching. Learn the language — blackpill, redpill, sigma, hypergamy, foid. If you hear these terms, do not panic but do have a direct conversation. Disconnection and loneliness are the entry points. Connection is the antidote.</p>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-num">2</div>
+      <div>
+        <h3>Report and flag manosphere content</h3>
+        <p>Use every platform's reporting tools when you see content that dehumanizes women or encourages violence. It takes 30 seconds. Mass reporting works. The Center for Countering Digital Hate at counterhate.com tracks platform responses and you can add your voice.</p>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-num">3</div>
+      <div>
+        <h3>Support organizations doing counter-radicalization work</h3>
+        <p>Organizations like Life After Hate (lifeafterhate.org), the Global Network on Extremism and Technology, and the UK's Moonshot CVE are working directly with radicalized men to help them exit these communities. They need funding and awareness.</p>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-num">4</div>
+      <div>
+        <h3>Know the warning signs in relationships</h3>
+        <p>Red flags include a partner who uses dehumanizing language about women, believes women owe men sexual access, tracks your location or communications, isolates you from friends, or quotes manosphere content. Trust what you observe. These ideologies escalate.</p>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-num">5</div>
+      <div>
+        <h3>Push for platform accountability</h3>
+        <p>Contact your congressional representatives and ask them to support algorithmic transparency legislation that would require platforms to disclose how content is recommended. The EU's Digital Services Act of 2024 is a model. The U.S. needs to catch up.</p>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-num">6</div>
+      <div>
+        <h3>Educate yourself and share widely</h3>
+        <p>Read the ADL's incel backgrounder at adl.org, the UN Women explainer at unwomen.org, and the Center for Countering Digital Hate's manosphere report at counterhate.com. Then share them. An informed woman is a protected woman.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-title">How to Band Women Together</div>
+  <div class="section-sub">Community is how we counter radicalization</div>
+  <div class="band-card">
+    <h3>Organize to protect each other:</h3>
+    <div class="band-idea">
+      <span class="band-emoji">🌸</span>
+      <div>
+        <h4>Let me connect you — just sign up</h4>
+        <p>You do not have to figure out how to organize alone. When you sign up below, here is exactly what I do: I review your location and cause interests, personally match you with women in your area who signed up for the same issues, and reach out by email to make the introduction. From there I help facilitate whether that looks like an in-person meetup, a virtual panel, a community awareness talk, or a local event. I handle the coordination. I send the resources. I make the connections. All you have to do is sign up and show up.</p>
+      </div>
+    </div>
+    <div class="band-idea">
+      <span class="band-emoji">💬</span>
+      <div>
+        <h4>Create safe conversation spaces for women to share experiences</h4>
+        <p>Many women have experienced manosphere-influenced behavior from men in their lives but have no language for it. Host conversations — in person or online — where women can name what they have experienced, share warning signs, and support each other.</p>
+      </div>
+    </div>
+    <div class="band-idea">
+      <span class="band-emoji">👩‍👦</span>
+      <div>
+        <h4>Start conversations with mothers of boys</h4>
+        <p>Mothers are often the first people who notice radicalization. Build community with moms of young men — share resources on warning signs, media literacy, and how to talk to boys about what they are consuming online without pushing them away.</p>
+      </div>
+    </div>
+    <div class="band-idea">
+      <span class="band-emoji">📣</span>
+      <div>
+        <h4>Amplify women who speak out online</h4>
+        <p>Women who talk about the manosphere publicly are frequently targeted for harassment. Show up for them — share their content, report harassment on their behalf, and make it clear that attacks on one woman will be met with the voices of many.</p>
+      </div>
+    </div>
+    <div class="band-idea">
+      <span class="band-emoji">🏫</span>
+      <div>
+        <h4>Push for media literacy education in schools</h4>
+        <p>Contact your local school board and ask what media literacy curriculum is being taught. Advocate for programs that teach young people how algorithms work, how to identify radicalization pathways, and what healthy masculinity looks like.</p>
+      </div>
+    </div>
+    <div class="band-idea">
+      <span class="band-emoji">🛡️</span>
+      <div>
+        <h4>Know your safety resources</h4>
+        <p>If you are in a relationship with someone consuming this content, the National Domestic Violence Hotline is available at 1-800-799-7233 or thehotline.org. If you witness threatening online behavior toward women, report it to the FBI's Internet Crime Complaint Center at ic3.gov.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:24px; padding-bottom:28px;">
+  <div class="warning-box">
+    <h3>A note from Lady Lotus:</h3>
+    <p>Understanding the manosphere does not mean excusing it. <strong>Loneliness is real. Male mental health is real. And none of that justifies hatred of women or violence.</strong> We can hold both truths at once. We can have compassion for men who are struggling while being absolutely clear that the communities exploiting that struggle are dangerous and that women's lives are not acceptable casualties of someone else's pain. Stay informed. Stay connected. And protect each other.</p>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>Join The Lotus Assembly</h2>
+  <p>Fill in your info below and I will personally reach out with resources on staying safe, understanding these ideologies, and connecting with women who are organizing around gender-based safety in your area. You will not be left on a list. You will hear from me.</p>
+
+  <div id="form-area">
+    <div id="error-msg" class="error-msg"></div>
+    <input class="form-input" type="text"  id="f-name"   placeholder="Your first name" />
+    <input class="form-input" type="email" id="f-email"  placeholder="Your email address" />
+    <input class="form-input" type="text"  id="f-city"   placeholder="Your city and state" />
+    <input class="form-input" type="text"  id="f-county" placeholder="Your county (optional)" />
+
+    <p class="role-label">I want to: <span style="color:rgba(255,255,255,0.42); font-size:11px;">(choose all that apply)</span></p>
+    <div class="role-row">
+      <div class="role-btn" onclick="toggleRole(this)">🛡️ Protect women in my community</div>
+      <div class="role-btn" onclick="toggleRole(this)">📚 Educate myself and others</div>
+      <div class="role-btn" onclick="toggleRole(this)">👩‍👦 Talk to boys and young men</div>
+      <div class="role-btn" onclick="toggleRole(this)">📣 Organize and advocate</div>
+    </div>
+
+    <button class="submit-btn" id="submit-btn" onclick="handleSubmit()">Count Me In. We Protect Each Other. ♡</button>
+    <p style="font-size:11px; margin-top:12px; color:rgba(255,255,255,0.42);">No spam, ever. Unsubscribe anytime.</p>
+  </div>
+
+  <div class="success-box" id="success">
+    <h3>You are in. We see you. ♡</h3>
+    <p>Thank you for taking this seriously. Every woman who understands this issue is one more woman who can protect herself and the women around her. Check your email. You will hear from me directly.</p>
+    <p style="margin-top:12px;">Share this with 3 women. Information shared between women saves lives.</p>
+    <div style="margin-top:16px;">
+      <span class="tag">#TheLotusAssembly</span>
+      <span class="tag">#WomensSafety</span>
+      <span class="tag">#CounterTheManosphere</span>
+    </div>
+    <div style="margin-top:16px;">
+      <a href="https://ladylotuss9.github.io/The-Lotus-Assembly/" target="_blank" rel="noopener"
+         style="display:inline-block; background:white; color:#8B3030; border-radius:10px;
+                padding:10px 22px; font-size:13px; font-weight:700; text-decoration:none;
+                font-family:'DM Sans',sans-serif;">
+        Visit The Lotus Assembly ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="lt-footer">
+  <p>Join my Discord and socials for all things womanhood. Stay informed, connected, and protected through The Lotus Assembly.</p>
+  <a class="lt-footer-btn" href="https://discord.gg/sbne7xQWW" target="_blank" rel="noopener">💬 Join the Discord ↗</a>
+  <a class="lt-footer-btn outline" href="https://linktr.ee/ladylotuss9" target="_blank" rel="noopener">🌿 Visit Linktree ↗</a>
+</div>
+
+<div class="footer-note">
+  <strong>All statistics verified from primary sources:</strong><br>
+  Anti-Defamation League 2025 · UN Women 2024 · Center for Countering Digital Hate 2024<br>
+  Dublin City University Study 2024 · Refuge UK 2026 · University of Cambridge 2025 · Bonfire Leadership Solutions 2025<br><br>
+  <span class="tag">#TheLotusAssembly</span>
+  <span class="tag">#WomensSafety</span>
+  <span class="tag">#CounterTheManosphere</span>
+  <span class="tag">#LadyBlossoms</span><br><br>
+  Share this. An informed woman is a protected woman.
+</div>
+
+<script>
+var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxn7zM3jNUGYcGts9S1MEGKyXwQYdryn8kppBhha3AbXYreDuMjaHTImy5e7RBz56WOqw/exec";
+var SECRET_TOKEN    = "LadyLotus2024CircleOfMamas!Secure";
+var MAX_LEN         = 200;
+
+function toggleRole(el) { el.classList.toggle('selected'); }
+
+function sanitize(str) {
+  return str.replace(/<[^>]*>/g, "").replace(/[<>'"]/g, "").trim();
+}
+
+async function handleSubmit() {
+  var errBox = document.getElementById('error-msg');
+  errBox.style.display = 'none';
+  var name   = sanitize(document.getElementById('f-name').value);
+  var email  = sanitize(document.getElementById('f-email').value).toLowerCase();
+  var city   = sanitize(document.getElementById('f-city').value);
+  var county = sanitize(document.getElementById('f-county').value);
+  if (!name || !email) {
+    errBox.textContent = 'Please enter your first name and email to join!';
+    errBox.style.display = 'block';
+    return;
+  }
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    errBox.textContent = 'Please enter a valid email address.';
+    errBox.style.display = 'block';
+    return;
+  }
+  var selectedRoles = [];
+  var btns = document.querySelectorAll('.role-btn.selected');
+  for (var j = 0; j < btns.length; j++) { selectedRoles.push(sanitize(btns[j].textContent)); }
+  var btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  try {
+    await fetch(APPS_SCRIPT_URL, {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: SECRET_TOKEN, name: name, email: email, city: city, county: county, roles: selectedRoles.join(', '), source: "Manosphere Poster" })
+    });
+    document.getElementById('form-area').style.display = 'none';
+    document.getElementById('success').style.display = 'block';
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Count Me In. We Protect Each Other. ♡';
+    errBox.textContent = 'Something went wrong. Please check your connection and try again.';
+    errBox.style.display = 'block';
+  }
+}
+</script>
+</body>
+</html>
